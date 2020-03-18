@@ -102,7 +102,7 @@ def fit_model(trainX, trainY, testX, testY, INIT_LR = 1e-3, EPOCHS = 25):
         epochs=EPOCHS
     )
 
-    return model
+    return model, model_history
 
 def get_classes(label_encoding):
     label_decoding = dict(
@@ -146,7 +146,7 @@ if __name__ == '__main__':
     trainAug = ImageDataGenerator(rotation_range=15,
                                   fill_mode="nearest")
 
-    model = fit_model(trainX, trainY, testX, testY, EPOCHS=EPOCHS)
+    model, model_history = fit_model(trainX, trainY, testX, testY, EPOCHS=EPOCHS)
     print("[INFO] evaluating network...")
     predIdxs = model.predict(testX, batch_size=batch_size)
     predIdxs = np.argmax(predIdxs, axis=1)
