@@ -128,8 +128,8 @@ def get_sensitivity_specificity_accuracy(testY, pred_idxs):
     print("specificity: {:.4f}".format(specificity))
 
 if __name__ == '__main__':
-    plot = "plot.png",
-    model_name = "covid19_2.model",
+    plot = "plot.png"
+    model_name = "covid19_2.model"
     batch_size = 8
     EPOCHS = 25
     labels, data, label_encoding = get_images()
@@ -139,7 +139,7 @@ if __name__ == '__main__':
         data, labels,
         test_size=0.20,
         stratify=labels,
-        random_state=12
+        random_state=42
     )
     
     # initialize the training data augmentation object
