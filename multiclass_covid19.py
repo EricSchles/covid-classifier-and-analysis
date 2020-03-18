@@ -30,7 +30,7 @@ def preprocess_image(image_path):
     return cv2.resize(image, (224, 224))
 
 def get_images():
-    base_path = "dataset2/covid-chestxray-dataset/"
+    base_path = "multiclass_covid19_dataset/covid-chestxray-dataset/"
     metadata = pd.read_csv(base_path + "metadata.csv")
     label_names = [
         'COVID-19', 'ARDS', 'SARS',
