@@ -1,5 +1,12 @@
 # Experiments and Analysis of COVID 19
 
+Before you take this seriously, checkout this post:
+
+https://lukeoakdenrayner.wordpress.com/2020/03/23/ct-scanning-is-just-awful-for-diagnosing-covid-19/
+
+Hopefully it makes you think otherwise about taking this seriously.
+
+
 I decided to memorialize this as an analysis of COVID 19.  I want to be very clear, I am not a medical professional.  Most of this is a intended as a reaction and extension of [detecting covid](https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/).  It appears as though some research labs around the world are trying similar things.  I think everyone is in the initial stages right now.  And trying to grapple with the problem and it's urgency.  I am fortunate in that I have no dead lines and the only dog in this fight is that I want to see this disease dealt with honestly and correctly.  Therefore I can be more honest than those who are stressed or tied to a paycheck.  That is my only value add.  I can fail and be honest about it.
 
 ## What I've done so far
